@@ -1,9 +1,5 @@
-import {compose, createStore, applyMiddleware } from 'redux';
+import { compose, createStore, applyMiddleware } from 'redux';
 import rootReducer from './reducers'
-// import thunkMiddleware from 'redux-thunk';
-// import reduxMulti from 'redux-multi';
-
-// const createAppStore = (createStore);
 
 export default function configureStore(initialState) {
   const store = createStore(rootReducer, initialState, window.devToolsExtension && window.devToolsExtension());

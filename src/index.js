@@ -14,12 +14,12 @@ let route = (
         <Router history={browserHistory}>
             <Route path="/" component={App}>
             </Route>
-            <Route path="/sample/*" component={Sample}/>
+            <Route path="/sample/*" component={Sample} />
         </Router>
     </Provider>
 );
 
 ReactDOM.render(
-  route,
-  document.getElementById('root')
+    route,
+    document.getElementById('root')
 );

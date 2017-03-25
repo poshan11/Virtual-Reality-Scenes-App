@@ -5,32 +5,30 @@ import {
 
 import { withRouter } from 'react-router';
 
-import {addImages ,getImages} from './actions';
+import { addImages, getImages } from './actions';
 
 import 'aframe';
-// import {Entity, Scene} from 'aframe-react';
 
 class Sample extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            image : ''
+            image: ''
         }
     }
 
-    componentDidMount(){
+    componentDidMount() {
         const { splat } = this.props.params,
-                image  = this.props.images ? this.props.images[splat].pano : false;
+            image = this.props.images ? this.props.images[splat].pano : false;
         this.setState({
-            image : image
+            image: image
         });
     }
 
     render() {
-        console.log(this.state)
         return (
             <div>
-                 <a-scene>
+                <a-scene>
                     <a-sky src={this.state.image} rotation="0 -130 0"></a-sky>
                 </a-scene>
             </div>
@@ -52,7 +50,7 @@ function mapStateToProps(state) {
 const mapDispatchToProps = (dispatch) => {
     return {
         clickedImage: () => {
-          dispatch(getImages())
+            dispatch(getImages())
         }
     }
 }
