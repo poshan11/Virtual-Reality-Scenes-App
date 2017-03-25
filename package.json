@@ -1,0 +1,30 @@
+{
+  "name": "vrapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "aframe": "^0.5.0",
+    "aframe-react": "^3.5.0",
+    "axios": "^0.15.3",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-polyfill": "^6.22.0",
+    "i18n-react": "0.3.0-ts1",
+    "jquery": "^3.1.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "react-router": "^3.0.2",
+    "redux": "^3.6.0",
+    "redux-multi": "^0.1.12",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
